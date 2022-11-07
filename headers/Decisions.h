@@ -14,25 +14,26 @@ void decisions1 (void) {
 
     // Use if statement.
     if (num < 40000.0) {
-        cout<< "Num (%.2f) is less than 40000.0.\n"; // Displayed.
+        cout << "Num " << num << "is less than 40000.0." << endl; // Displayed.
     }
     num += num;
 
     // Use if-else statement.
     if (num < 40000.0) {
-        cout << "Num (%.2f) is less than 40000.0.\n"; // Not displayed.
+        cout << "Num " << num << "is less than 40000.0." << endl; // Not displayed.
     } else {
-        cout << "Num (%.2f) is not less than 40000.0.\n"; // Displayed.
+        cout << "Num " << num << "is not less than 40000.0." << endl; // Displayed.
 
     }
     num = 0.0;
 
+
     // Use if-else-if statement.
     if (num == 0.0) {
-        cout << "Num (%.2f) is equal to 0.0.\n"; // Displayed.
+        cout << "Num " << num << "is equal to 0.0." << endl; // Displayed.
     } else if (num < 40000.0) {
-        cout << "Num (%.2f) is less than 40000.0.\n"; // Not displayed.
+        cout << "Num " << num << "is less than 40000.0." << endl; // Not displayed.
     } else {
-        cout << "Num (%.2f) is not less than 40000.0 and is not equal to 0.0.\n"; // Not displayed.
+        cout << "Num " << num << "is not less than 40000.0 and is not equal to 0.0." << endl; // Not displayed.
     }
 }
