@@ -2,6 +2,9 @@
 #include <iostream>
 #include "./headers/BasicIO.h"
 #include "./headers/Decisions.h"
+#include "./headers/Loops.h"
+#include "./headers/Functions.h"
+#include "./headers/Structs.h"
 
 // In C++, a namespace is a collection of related identifiers
 // (functions, classes, objects, variables).
@@ -19,12 +22,15 @@
 using namespace std;
 
 int main() {
-    // In order to use a C++ standard library identifier, like cout,
-    // we need to specify that it belongs to the std namespace. One
-    // way to do this is by using the scope resolution operator ::
-    //std::cout << "Hello World!";
-    cout << "Hello World!";
-    output();
-    input();
-    decisions1();
+    /* In order to use a C++ standard library identifier, like cout,
+       we need to specify that it belongs to the std namespace. One
+       way to do this is by using the scope resolution operator :: */
+    // std::cout << "Hello World!";
+    // cout << "Hello World!" << endl;
+    // output();
+    // input();
+    // decisions1();
+    // loops1();
+    // congratulate1("James", "C++", "Bjarne Stoustrup");
+    accessStructMembers();
 }
