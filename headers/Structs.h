@@ -11,6 +11,14 @@ struct Person
     int weightInKilos;
 };
 
+// Declare another struct for Person using a type definition. A type definition defines an alias for a 
+// struct that allows the alias to be used like a primitive data type.
+typedef struct {
+    // Declare two members in the Person struct.
+    float heightInMeters;
+    int weightInKilos;
+} PersonType; // This is the alias.
+
 // Use C++ standard library namespace.
 using namespace std;
 
@@ -26,4 +34,20 @@ void accessStructMembers(void) {
     // Display the values in members.
     cout << "Person's weight is " << person.weightInKilos << " kilograms." << endl;
     cout << "Person's height is " << person.heightInMeters << " meters." << endl;
+
+    // Declare a Person struct using the alias (type definition).
+    PersonType p;
+
+    // Assign values to the members of the Person struct.
+    p.heightInMeters = 1.8;
+    p.weightInKilos = 96;
+
+    // Display the values in members.
+    cout << "Person's weight is " << person.weightInKilos << " kilograms." << endl;
+    cout << "Person's height is " << person.heightInMeters << " meters." << endl;
+}
+
+/* This function will have a struct as a parameter. It will compute and return the BMI of the Person struct.*/
+float bodyMassIndex(struct Person p) {
+    return p.weightInKilos / (p.heightInMeters * p.heightInMeters);
 }
